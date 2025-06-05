@@ -12,9 +12,9 @@ Welcome to my personal portfolio website! This site was built using HTML, CSS, a
 I'm offering free piano lessons during this summer for beginners and those curious about learning music. Details on how to sign up or get in touch are available on the website.
 
 # 🛠️ Technologies Used
-HTML5
-CSS3
-JavaScript (Vanilla)
+* HTML5
+* CSS3
+* JavaScript (Vanilla)
 
 # 📁 How to Use
 To view the website:
