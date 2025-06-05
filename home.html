@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Piano Lessons</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Aahana Karanji</div>
+
+      <ul class="nav-links" class="navLinks">
+        <li><a href="#title">Home</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#videos">Sample Videos</a></li>
+        <li><a href="#signUp">Sign Up</a></li>
+      </ul>
+
+      <div class="hamburger" class="hamburger">☰</div>
+    </nav>
+    <script src="script.js"></script>
+    <header>
+      <h1 id="title" class="title">Learn to Play Piano for Free!</h1>
+      <h3>Join my free piano lessons and start your musical journey today.</h3>
+      <div class="headerImage">
+        <img
+          src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGd1dDVubXB1b2MwOTRoc2N6a2s3MmVkY3hkdWF1NzQzeW42ZDZmayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FMW20upY7JfTRfhVq7/giphy.gif"
+        />
+      </div>
+
+      <h2 id="aboutme">About Me</h2>
+      <div class="aboutMeBlockWrapper">
+        <div>
+          <b>Hi! My name is Aahana Karanji! </b>
+          <p class="aboutMeInfoPara">
+            I am a 17-year-old who has been playing piano since I was 9. I like
+            to read and listen to music. I am studying to be a software
+            programmer, in fact, I made this website! I am a junior at Etowah
+            High School, and I live in Eagle Watch.
+          </p>
+          <p class="aboutMeInfoPara">
+            I love playing piano with all my heart! Piano has been a huge part
+            of my life. Even indirectly, piano has helped me with other areas
+            like math, language skills, my attention and memory, and improved my
+            fine motor skills, like typing faster!
+          </p>
+          <p class="aboutMeInfoPara">
+            My piano journey started in the third grade. I had always loved
+            playing on my old keyboard, so I wanted to learn officially. I
+            started my lessons, and I loved them! I still remember the first
+            song I ever learnt, Hot Cross Buns. I remember my first piano
+            recital, it was terrifying but I loved it. However, my songs were
+            short and took me less than 30 seconds, so that probably helped my
+            first ever experience.
+          </p>
+          <p class="aboutMeInfoPara">
+            Other than piano, I love to watch movies with my mother, read books,
+            learn about history, and listen to a variety of genres of music.
+            Growing up, I loved Harry Potter and Percy Jackson, but now my
+            reading had reduced, because I spend more time programming and
+            studying physics.
+          </p>
+        </div>
+        <div>
+          <img src="aahana.jpeg" width="450px" height="325px" />
+        </div>
+      </div>
+
+      <h2>Sample Videos</h2>
+      <div id="videos" class="aboutMeBlockWrapper">
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/sbTVZMJ9Z2I&ab_channel=Rousseau"
+        >
+        </iframe>
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/NPBCbTZWnq0&ab_channel=Rousseau"
+        >
+        </iframe>
+      </div>
+
+      <div id="signUp" class="signupWrapper">
+        <h2>Sign Up</h2>
+        <button class="customButton" onclick="showForm()">Sign Up</button>
+      </div>
+
+      <dialog id="signupDialog">
+        <form class="signupForm">
+          <h2>Sign Up</h2>
+          <label for="name">Name:</label>
+          <input type="text" class="signupField" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" class="signupField" name="email" required />
+
+          <button class="customButton" type="submit">Submit</button>
+          <button class="customButton" type="button" onclick="closeForm()">
+            Close
+          </button>
+        </form>
+      </dialog>
+    </header>
+  </body>
+</html>
