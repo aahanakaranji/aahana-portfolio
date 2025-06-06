@@ -3,106 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Piano Lessons</title>
+    <title>Aahana Karanji | Student, Pianist, Software Developer</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <div class="logo">Aahana Karanji</div>
-
-      <ul class="nav-links" class="navLinks">
-        <li><a href="#title">Home</a></li>
-        <li><a href="#aboutme">About Me</a></li>
-        <li><a href="#videos">Sample Videos</a></li>
-        <li><a href="#signUp">Sign Up</a></li>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#piano">Piano Lessons</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-
-      <div class="hamburger" class="hamburger">☰</div>
     </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-image">
+        <img src="aahana.JPG" alt="Aahana Karanji" />
+        <p class="quote">
+          "One child, one teacher, one book, and one pen can change the world."
+          — Malala Yousafzai
+        </p>
+      </div>
+      <div class="hero-content">
+        <h1>Hello, I’m Aahana Karanji</h1>
+        <p>
+          Student • Pianist • Aspiring Software Engineer<br />
+          Leader • Volunteer • History Enthusiast
+        </p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I am a junior at Etowah High School, currently ranked
+        <strong>6th out of 490 students</strong>, with a
+        <strong>4.5 GPA</strong> and <strong>102.56 GPA</strong>. I am
+        passionate about both technology and the arts.
+      </p>
+      <p>
+        I have been taking <strong>piano lessons for 9 years</strong>, and I
+        volunteer as an
+        <strong>ambassador with the Smile Up organization</strong> to give back
+        to my community. This summer, I am offering free piano lessons to help
+        others experience the joy of music.
+      </p>
+      <p>
+        Academically, I have pursued <strong>AP Computer Science</strong> for
+        two years with top scores and am an active member of the
+        <strong>Math Honors Society</strong> and
+        <strong>English Language Honors Society</strong>. I also lead my
+        school’s <strong>Model UN club</strong>, where I develop skills in
+        public speaking, leadership, and global awareness.
+      </p>
+      <p>
+        Outside of school, I am a <strong>history enthusiast</strong> and a fan
+        of <strong>anime</strong>. As an <strong>immigrant</strong>, I bring a
+        unique perspective and drive to my work and learning.
+      </p>
+      <p>
+        I am applying to top <strong>computer science</strong> programs to
+        further my studies and contribute to a global community of learners and
+        innovators.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>My Coding Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            Built with HTML, CSS, and JavaScript to showcase my skills and
+            interests.
+          </p>
+          <a
+            href="https://github.com/aahanakaranji/aahana-portfolio"
+            target="_blank"
+            >GitHub Repo</a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Interactive Piano App</h3>
+          <p>
+            A small web app to teach piano basics using JavaScript and sound
+            libraries.
+          </p>
+          <a
+            href="https://github.com/aahanakaranji/aahana-portfolio"
+            target="_blank"
+            >GitHub Repo</a
+          >
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </section>
+
+    <!-- Piano Lessons Section -->
+    <section id="piano" class="section">
+      <h2>Free Piano Lessons</h2>
+      <p>
+        This summer, I am offering free piano lessons to beginners of all ages.
+        If you are interested, please sign up below!
+      </p>
+      <button class="customButton" onclick="showForm()">Sign Up Now</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p>
+        Have questions or want to connect? You can email me at
+        <a href="mailto:atlkaranji@gmail.com">atlkaranji@gmail.com</a>.
+      </p>
+    </section>
+
+    <!-- Sign Up Dialog -->
+    <dialog id="signupDialog">
+      <form class="signupForm">
+        <h2>Sign Up for Piano Lessons</h2>
+        <label for="name">Name:</label>
+        <input type="text" class="signupField" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" class="signupField" name="email" required />
+        <button class="customButton" type="submit">Submit</button>
+        <button class="customButton" type="button" onclick="closeForm()">
+          Close
+        </button>
+      </form>
+    </dialog>
+
     <script src="script.js"></script>
-    <header>
-      <h1 id="title" class="title">Learn to Play Piano for Free!</h1>
-      <h3>Join my free piano lessons and start your musical journey today.</h3>
-      <div class="headerImage">
-        <img
-          src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGd1dDVubXB1b2MwOTRoc2N6a2s3MmVkY3hkdWF1NzQzeW42ZDZmayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FMW20upY7JfTRfhVq7/giphy.gif"
-        />
-      </div>
-
-      <h2 id="aboutme">About Me</h2>
-      <div class="aboutMeBlockWrapper">
-        <div>
-          <b>Hi! My name is Aahana Karanji! </b>
-          <p class="aboutMeInfoPara">
-            I am a 17-year-old who has been playing piano since I was 9. I like
-            to read and listen to music. I am studying to be a software
-            programmer, in fact, I made this website! I am a junior at Etowah
-            High School, and I live in Eagle Watch.
-          </p>
-          <p class="aboutMeInfoPara">
-            I love playing piano with all my heart! Piano has been a huge part
-            of my life. Even indirectly, piano has helped me with other areas
-            like math, language skills, my attention and memory, and improved my
-            fine motor skills, like typing faster!
-          </p>
-          <p class="aboutMeInfoPara">
-            My piano journey started in the third grade. I had always loved
-            playing on my old keyboard, so I wanted to learn officially. I
-            started my lessons, and I loved them! I still remember the first
-            song I ever learnt, Hot Cross Buns. I remember my first piano
-            recital, it was terrifying but I loved it. However, my songs were
-            short and took me less than 30 seconds, so that probably helped my
-            first ever experience.
-          </p>
-          <p class="aboutMeInfoPara">
-            Other than piano, I love to watch movies with my mother, read books,
-            learn about history, and listen to a variety of genres of music.
-            Growing up, I loved Harry Potter and Percy Jackson, but now my
-            reading had reduced, because I spend more time programming and
-            studying physics.
-          </p>
-        </div>
-        <div>
-          <img src="aahana.jpeg" width="450px" height="325px" />
-        </div>
-      </div>
-
-      <h2>Sample Videos</h2>
-      <div id="videos" class="aboutMeBlockWrapper">
-        <iframe
-          width="420"
-          height="315"
-          src="https://www.youtube.com/embed/sbTVZMJ9Z2I&ab_channel=Rousseau"
-        >
-        </iframe>
-        <iframe
-          width="420"
-          height="315"
-          src="https://www.youtube.com/embed/NPBCbTZWnq0&ab_channel=Rousseau"
-        >
-        </iframe>
-      </div>
-
-      <div id="signUp" class="signupWrapper">
-        <h2>Sign Up</h2>
-        <button class="customButton" onclick="showForm()">Sign Up</button>
-      </div>
-
-      <dialog id="signupDialog">
-        <form class="signupForm">
-          <h2>Sign Up</h2>
-          <label for="name">Name:</label>
-          <input type="text" class="signupField" name="name" required />
-
-          <label for="email">Email:</label>
-          <input type="email" class="signupField" name="email" required />
-
-          <button class="customButton" type="submit">Submit</button>
-          <button class="customButton" type="button" onclick="closeForm()">
-            Close
-          </button>
-        </form>
-      </dialog>
-    </header>
+    <footer class="footer">
+      <p>
+        © 2025 Aahana Karanji. All rights reserved. | Built with ❤️ using HTML,
+        CSS, JavaScript.
+      </p>
+    </footer>
   </body>
 </html>
