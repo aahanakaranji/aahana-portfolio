@@ -122,7 +122,12 @@
         This summer, I am offering free piano lessons to beginners of all ages.
         If you are interested, please sign up below!
       </p>
-      <button class="customButton" onclick="showForm()">Sign Up Now</button>
+      <button
+        class="customButton"
+        onclick="window.open('https://docs.google.com/forms/d/1jGKmNIsIZkFjl-sH7m5wSHT8lSe7MXUD26O4oqGKNeg/viewform', '_blank')"
+      >
+        Sign Up Now
+      </button>
     </section>
 
     <!-- Contact Section -->
@@ -133,21 +138,6 @@
         <a href="mailto:atlkaranji@gmail.com">atlkaranji@gmail.com</a>.
       </p>
     </section>
-
-    <!-- Sign Up Dialog -->
-    <dialog id="signupDialog">
-      <form class="signupForm">
-        <h2>Sign Up for Piano Lessons</h2>
-        <label for="name">Name:</label>
-        <input type="text" class="signupField" name="name" required />
-        <label for="email">Email:</label>
-        <input type="email" class="signupField" name="email" required />
-        <button class="customButton" type="submit">Submit</button>
-        <button class="customButton" type="button" onclick="closeForm()">
-          Close
-        </button>
-      </form>
-    </dialog>
 
     <script src="script.js"></script>
     <footer class="footer">
