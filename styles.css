@@ -4,6 +4,8 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -198,23 +200,93 @@ a:hover {
 }
 
 /* Responsive */
+/* --- Mobile-only overrides (append at end) --- */
 @media screen and (max-width: 768px) {
+  /* Layout & spacing */
+  .section {
+    padding: 32px 16px;
+  }
   .hero-section {
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 32px 16px;
     text-align: center;
-    padding: 40px 20px;
   }
 
-  .hero-image img {
-    width: 200px;
-    height: 200px;
+  /* Navbar that doesn't squish */
+  .navbar {
+    flex-wrap: wrap;
+    padding: 12px 16px;
   }
-}
-.footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  color: #777;
-  background-color: #f9f9f9;
-  border-top: 1px solid #ddd;
+  .logo {
+    font-size: 18px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    margin-top: 8px;
+  }
+  .nav-links a {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+
+  /* Hero image: fluid on mobile, fixed on desktop remains intact */
+  .hero-image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto; /* override the desktop 450px */
+    border-radius: 16px;
+  }
+
+  /* Quote aligns to image width and wraps nicely */
+  .quote {
+    width: 100%;
+    max-width: 340px;
+    margin: 8px auto 24px;
+    padding: 0 8px;
+    font-size: 14px;
+  }
+
+  /* Hero text scales down a bit */
+  .hero-content h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+  .hero-content p {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+  /* Projects: stack cleanly */
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .project-card {
+    flex: 1 1 260px;
+    max-width: 320px;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  /* Buttons: full width, comfy taps */
+  .customButton {
+    width: 100%;
+    max-width: 360px;
+    padding: 14px 16px;
+    font-size: 16px;
+  }
+
+  /* Footer text a bit smaller */
+  .footer {
+    font-size: 13px;
+    padding: 16px;
+  }
 }
