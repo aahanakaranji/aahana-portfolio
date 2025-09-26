@@ -70,7 +70,6 @@ a:hover {
 
 .nav-links a:hover {
   color: rgb(160, 8, 8);
-  border-bottom: 2px solid rgb(160, 8, 8);
 }
 
 .hamburger {
@@ -288,5 +287,53 @@ a:hover {
   .footer {
     font-size: 13px;
     padding: 16px;
+  }
+}
+
+/* Hamburger base */
+.hamburger {
+  display: none; /* hidden on desktop */
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 8px;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 5px 0;
+  background: #f7f7f7;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Mobile nav */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    background: #1f1f1f;
+    padding: 12px 16px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+
+  /* Animate hamburger into an X */
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
   }
 }
