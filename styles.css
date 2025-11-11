@@ -95,13 +95,9 @@ a:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 .quote {
-  width: 450px;
-  text-align: center;
   font-style: italic;
   font-size: 16px;
   color: #666;
-  margin-top: -10px;
-  margin-bottom: 30px;
 }
 .hero-content {
   max-width: 500px;
@@ -299,6 +295,40 @@ a:hover {
   margin: 5px 0;
   background: #f7f7f7;
   transition: transform 0.3s, opacity 0.3s;
+}
+
+/* ===== Simple Footer ===== */
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  color: #444;
+  font-family: "Roboto", sans-serif;
+  border-top: 1px solid #ddd;
+}
+
+.footer .quote {
+  margin: 0 auto 1rem;
+  max-width: 600px;
+}
+
+.footer blockquote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #333;
+  margin: 0;
+}
+
+.footer figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.footer p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #777;
 }
 
 /* Mobile nav */
