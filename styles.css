@@ -103,7 +103,7 @@ a:hover {
   height: 450px;
   border-radius: 20px;
   object-fit: cover;
-  box-shadow: 0 8px 20px #a00808;
+  box-shadow: 0 8px 20px #5353d7;
 }
 .quote {
   font-style: italic;
@@ -193,7 +193,8 @@ a:hover {
   color: white;
   padding: 15px 32px;
   font-size: 16px;
-  background-color: #a00808;
+  /* background-color: #a00808; */
+  background: linear-gradient(90deg, #a00808 0%, #5353d7 100%);
   box-shadow: 0 8px 16px #5353d7;
   cursor: pointer;
   border-radius: 5px;
@@ -396,7 +397,9 @@ a:hover {
   top: 0;
   width: 50%;
   height: 100%;
-  background: linear-gradient(180deg, #5353d7 0%, #ddd 100%);
+  /* background: linear-gradient(180deg, #5353d7 0%, #ddd 100%); */
+  background-color: #a00808;
+  /* background: linear-gradient(180deg, #a00808 0%, #ddd 100%); */
 }
 
 .curtain-left {
