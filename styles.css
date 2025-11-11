@@ -38,9 +38,8 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #1f1f1f 0%, #2a2a2a 100%);
+  background: linear-gradient(90deg, #1f1f1f 0%, #462323 100%);
   padding: 20px 40px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -69,7 +68,7 @@ a:hover {
 }
 
 .nav-links a:hover {
-  color: rgb(160, 8, 8);
+  color: #5353d7;
 }
 
 .hamburger {
@@ -78,21 +77,34 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
   padding: 80px 40px;
-  background: linear-gradient(135deg, #fff5f5 0%, #fafafa 100%);
+  background: linear-gradient(to bottom, #fff5f5 0%, #fff 100%);
+  overflow: hidden;
+}
+
+#fireworks-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero-image img {
+  position: relative;
   width: 450px;
   height: 450px;
   border-radius: 20px;
   object-fit: cover;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px #0000ff;
 }
 .quote {
   font-style: italic;
@@ -100,6 +112,7 @@ a:hover {
   color: #666;
 }
 .hero-content {
+  position: relative;
   max-width: 500px;
   text-align: center;
 }
@@ -108,15 +121,19 @@ a:hover {
   font-size: 48px;
   margin-bottom: 20px;
   color: rgb(160, 8, 8);
+  text-shadow: 1px 1px 2px #5353d7;
 }
 
 .hero-content p {
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 30px;
-  color: #444;
+  font-weight: 500;
 }
 
+.hero-content span {
+  color: #0000ff;
+}
 /* Sections */
 .section {
   padding: 60px 100px;
@@ -125,16 +142,21 @@ a:hover {
 
 .section h2 {
   font-size: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   color: rgb(160, 8, 8);
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #5353d7;
 }
 
 .section p {
   max-width: 700px;
   margin: 0 auto 20px auto;
+}
+
+.section a:hover {
+  color: #0000ff;
 }
 
 /* Projects */
@@ -152,13 +174,13 @@ a:hover {
   padding: 20px;
   width: 300px;
   text-align: left;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 8px #5353d7;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px #0000ff;
 }
 
 .project-card h3 {
@@ -172,12 +194,13 @@ a:hover {
   padding: 15px 32px;
   font-size: 16px;
   background-color: rgb(160, 8, 8);
-  transition: background-color 0.3s ease;
+  box-shadow: 0 8px 16px #0000ff;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .customButton:hover {
-  background-color: #a00;
+  background-color: #5353d7;
 }
 
 /* Signup Form */
@@ -302,8 +325,6 @@ a:hover {
   text-align: center;
   padding: 2rem 1rem;
   background-color: #f9f9f9;
-  color: #444;
-  font-family: "Roboto", sans-serif;
   border-top: 1px solid #ddd;
 }
 
@@ -315,20 +336,18 @@ a:hover {
 .footer blockquote {
   font-size: 1.1rem;
   font-style: italic;
-  color: #333;
   margin: 0;
 }
 
 .footer figcaption {
   margin-top: 0.5rem;
   font-size: 0.95rem;
-  color: #666;
 }
 
 .footer p {
   margin-top: 1rem;
   font-size: 0.9rem;
-  color: #777;
+  color: #0000ff;
 }
 
 /* Mobile nav */
