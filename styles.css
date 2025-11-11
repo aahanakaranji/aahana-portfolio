@@ -38,17 +38,16 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #1f1f1f 0%, #462323 100%);
+  background: linear-gradient(90deg, #a00808 0%, #5353d7 100%);
   padding: 20px 40px;
 }
 
 .logo {
-  color: #a00808;
+  color: #ddd;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
 }
 
 .nav-links {
@@ -104,7 +103,7 @@ a:hover {
   height: 450px;
   border-radius: 20px;
   object-fit: cover;
-  box-shadow: 0 8px 20px #0000ff;
+  box-shadow: 0 8px 20px #a00808;
 }
 .quote {
   font-style: italic;
@@ -347,7 +346,7 @@ a:hover {
 .footer p {
   margin-top: 1rem;
   font-size: 0.9rem;
-  color: #0000ff;
+  color: #a00808;
 }
 
 /* Mobile nav */
@@ -396,8 +395,7 @@ a:hover {
   top: 0;
   width: 50%;
   height: 100%;
-  /* background: #ac4747; */
-  background: #6b0f1a;
+  background: linear-gradient(180deg, #5353d7 0%, #ddd 100%);
 }
 
 .curtain-left {
