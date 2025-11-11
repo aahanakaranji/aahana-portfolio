@@ -47,19 +47,31 @@ tsParticles.load("fireworks-container", {
   },
   emitters: [
     {
-      direction: "top",
+      direction: "none",
       rate: { delay: 0.2, quantity: 4 },
-      position: { x: 25, y: 100 },
+      position: { x: 60, y: 70 },
+      life: {
+        count: 30,
+        duration: 0.1,
+      },
     },
     {
-      direction: "top",
+      direction: "none",
       rate: { delay: 0.25, quantity: 4 },
-      position: { x: 50, y: 100 },
+      position: { x: 70, y: 70 },
+      life: {
+        count: 30,
+        duration: 0.1,
+      },
     },
     {
-      direction: "top",
+      direction: "none",
       rate: { delay: 0.2, quantity: 4 },
-      position: { x: 75, y: 100 },
+      position: { x: 80, y: 70 },
+      life: {
+        count: 30,
+        duration: 0.1,
+      },
     },
   ],
 });
