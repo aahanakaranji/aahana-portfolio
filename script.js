@@ -75,3 +75,17 @@ tsParticles.load("fireworks-container", {
     },
   ],
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".curtain-left", {
+  x: "-100%",
+  duration: 1.5,
+  ease: "power2.inOut",
+});
+
+gsap.to(".curtain-right", {
+  x: "100%",
+  duration: 1.5,
+  ease: "power2.inOut",
+});
