@@ -131,7 +131,7 @@ a:hover {
 }
 
 .hero-content span {
-  color: #0000ff;
+  color: #5353d7;
 }
 /* Sections */
 .section {
@@ -155,7 +155,7 @@ a:hover {
 }
 
 .section a:hover {
-  color: #0000ff;
+  color: #5353d7;
 }
 
 /* Projects */
@@ -179,7 +179,7 @@ a:hover {
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px #0000ff;
+  box-shadow: 0 8px 16px #5353d7;
 }
 
 .project-card h3 {
@@ -188,12 +188,13 @@ a:hover {
 
 /* Buttons */
 .customButton {
+  margin-top: 20px;
   border: none;
   color: white;
   padding: 15px 32px;
   font-size: 16px;
   background-color: #a00808;
-  box-shadow: 0 8px 16px #0000ff;
+  box-shadow: 0 8px 16px #5353d7;
   cursor: pointer;
   border-radius: 5px;
 }
