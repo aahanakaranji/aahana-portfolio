@@ -1,4 +1,15 @@
-/* Reset */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap");
+
+.logo {
+  color: #ddd;
+  font-size: 32px;
+  font-family: "Dancing Script", cursive;
+  text-shadow: 1px 1px 2px #5353d7;
+  letter-spacing: 2px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
@@ -40,14 +51,6 @@ a:hover {
   align-items: center;
   background: linear-gradient(90deg, #a00808 0%, #5353d7 100%);
   padding: 20px 40px;
-}
-
-.logo {
-  color: #ddd;
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
 }
 
 .nav-links {
@@ -130,8 +133,8 @@ a:hover {
 .section h2 {
   font-size: 32px;
   margin-bottom: 60px;
+  font-family: "Dancing Script", cursive;
   color: #a00808;
-  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-shadow: 1px 1px 2px #5353d7;
@@ -181,7 +184,6 @@ a:hover {
   color: white;
   padding: 15px 32px;
   font-size: 16px;
-  /* background-color: #a00808; */
   background: linear-gradient(90deg, #a00808 0%, #5353d7 100%);
   box-shadow: 0 8px 16px #5353d7;
   cursor: pointer;
@@ -385,7 +387,11 @@ a:hover {
   top: 0;
   width: 50%;
   height: 100%;
-  background-color: #a00808;
+  background-image: url("curtain-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(1.8);
 }
 
 .curtain-left {

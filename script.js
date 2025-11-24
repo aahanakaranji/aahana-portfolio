@@ -36,3 +36,44 @@ gsap.to(".curtain-right", {
   duration: 1.5,
   ease: "power2.inOut",
 });
+
+gsap.from("#hero h1", {
+  duration: 1.5,
+  y: -30,
+  opacity: 0,
+  ease: "power2.out",
+  delay: 0.6,
+});
+
+gsap.registerPlugin(ScrollTrigger, ScrambleTextPlugin);
+
+window.addEventListener("load", function () {
+  gsap.utils.toArray("section h2").forEach((heading) => {
+    gsap.from(heading, {
+      duration: 1,
+      scrambleText: {
+        text: heading.parentElement.querySelector("h2").textContent,
+        chars: "AAHANA KARANJI",
+        revealDelay: 0.5,
+        speed: 0.3,
+      },
+      scrollTrigger: {
+        trigger: heading,
+        start: "top bottom",
+        end: "bottom top",
+        toggleActions: "restart none restart none",
+      },
+    });
+  });
+});
+
+setInterval(() => {
+  const logo = document.querySelector(".logo");
+  gsap.to(logo, {
+    duration: 0.8,
+    scrambleText: {
+      text: "AAHANA KARANJI",
+      chars: "AAHANA KARANJI",
+    },
+  });
+}, 8000);
