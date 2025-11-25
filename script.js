@@ -65,6 +65,18 @@ window.addEventListener("load", function () {
       },
     });
   });
+  gsap.from("#about strong", {
+    duration: 2,
+    y: -40,
+    opacity: 0,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: "#about",
+      start: "top bottom",
+      end: "bottom top",
+      toggleActions: "restart none restart none",
+    },
+  });
 });
 
 setInterval(() => {

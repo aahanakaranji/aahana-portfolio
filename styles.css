@@ -117,7 +117,6 @@ a:hover {
 .hero-content p {
   font-size: 28px;
   font-family: "Dancing Script", cursive;
-  line-height: 1.6;
   margin-bottom: 30px;
   font-weight: 500;
 }
@@ -151,6 +150,11 @@ a:hover {
   color: #5353d7;
 }
 
+.section strong {
+  display: inline-block;
+  color: #5353d7;
+}
+
 /* Projects */
 .projects-grid {
   display: flex;
@@ -180,7 +184,7 @@ a:hover {
 }
 
 /* Buttons */
-.customButton {
+.pianoButton {
   margin-top: 20px;
   border: none;
   color: white;
@@ -192,7 +196,7 @@ a:hover {
   border-radius: 5px;
 }
 
-.customButton:hover {
+.pianoButton:hover {
   background-position: right;
   transform: translateY(-2px);
   box-shadow: 0 12px 24px #5353d7;
@@ -393,10 +397,17 @@ a:hover {
   }
 
   /* Buttons */
-  .customButton {
+  .pianoButton {
     width: 100%;
     max-width: 360px;
     padding: 14px 16px;
     font-size: 16px;
   }
+}
+
+#piano-info {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="-150 0 200 250"><text x="-150" y="125" font-size="60" opacity="0.1" fill="%23a00808" text-anchor="left">♬ ♪ ♫</text></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px;
 }
