@@ -48,23 +48,6 @@ gsap.from("#hero h1", {
 gsap.registerPlugin(ScrollTrigger, ScrambleTextPlugin);
 
 window.addEventListener("load", function () {
-  gsap.utils.toArray("section h2").forEach((heading) => {
-    gsap.from(heading, {
-      duration: 1,
-      scrambleText: {
-        text: heading.parentElement.querySelector("h2").textContent,
-        chars: "AAHANA KARANJI",
-        revealDelay: 0.5,
-        speed: 0.3,
-      },
-      scrollTrigger: {
-        trigger: heading,
-        start: "top bottom",
-        end: "bottom top",
-        toggleActions: "restart none restart none",
-      },
-    });
-  });
   gsap.from("#about strong", {
     duration: 2,
     y: -40,
