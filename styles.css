@@ -10,6 +10,10 @@
   cursor: pointer;
 }
 
+.logo:hover {
+  color: #de6161;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
@@ -70,7 +74,7 @@ a:hover {
 }
 
 .nav-links a:hover {
-  color: #5353d7;
+  color: #de6161;
 }
 
 .hamburger {
@@ -96,11 +100,7 @@ a:hover {
   object-fit: cover;
   box-shadow: 0 8px 20px #5353d7;
 }
-.quote {
-  font-style: italic;
-  font-size: 16px;
-  color: #666;
-}
+
 .hero-content {
   position: relative;
   max-width: 500px;
@@ -115,7 +115,8 @@ a:hover {
 }
 
 .hero-content p {
-  font-size: 20px;
+  font-size: 28px;
+  font-family: "Dancing Script", cursive;
   line-height: 1.6;
   margin-bottom: 30px;
   font-weight: 500;
@@ -124,6 +125,7 @@ a:hover {
 .hero-content span {
   color: #5353d7;
 }
+
 /* Sections */
 .section {
   padding: 60px 100px;
@@ -191,7 +193,9 @@ a:hover {
 }
 
 .customButton:hover {
-  background-color: #5353d7;
+  background-position: right;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px #5353d7;
 }
 
 /* Signup Form */
@@ -206,92 +210,6 @@ a:hover {
 .signupField {
   height: 30px;
   padding: 5px;
-}
-
-/* Responsive */
-/* --- Mobile-only overrides (append at end) --- */
-@media screen and (max-width: 768px) {
-  /* Layout & spacing */
-  .section {
-    padding: 32px 16px;
-  }
-  .hero-section {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 32px 16px;
-    text-align: center;
-  }
-
-  /* Navbar that doesn't squish */
-  .navbar {
-    flex-wrap: wrap;
-    padding: 12px 16px;
-  }
-  .logo {
-    font-size: 18px;
-  }
-  .nav-links {
-    flex-wrap: wrap;
-    gap: 10px 14px;
-    margin-top: 8px;
-  }
-  .nav-links a {
-    padding: 6px 8px;
-    font-size: 14px;
-  }
-
-  /* Hero image: fluid on mobile, fixed on desktop remains intact */
-  .hero-image img {
-    width: 100%;
-    max-width: 320px;
-    height: auto; /* override the desktop 450px */
-    border-radius: 16px;
-  }
-
-  /* Quote aligns to image width and wraps nicely */
-  .quote {
-    width: 100%;
-    max-width: 340px;
-    margin: 8px auto 24px;
-    padding: 0 8px;
-    font-size: 14px;
-  }
-
-  /* Hero text scales down a bit */
-  .hero-content h1 {
-    font-size: 28px;
-    margin-bottom: 12px;
-  }
-  .hero-content p {
-    font-size: 16px;
-    margin-bottom: 18px;
-  }
-
-  /* Projects: stack cleanly */
-  .projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    padding: 0 16px;
-  }
-
-  .project-card {
-    flex: 1 1 260px;
-    max-width: 320px;
-    margin: 0;
-    padding: 16px;
-    box-sizing: border-box;
-  }
-
-  /* Buttons: full width, comfy taps */
-  .customButton {
-    width: 100%;
-    max-width: 360px;
-    padding: 14px 16px;
-    font-size: 16px;
-  }
 }
 
 /* Hamburger base */
@@ -320,6 +238,8 @@ a:hover {
 }
 
 .footer .quote {
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
   margin: 0 auto 1rem;
   max-width: 600px;
 }
@@ -339,37 +259,6 @@ a:hover {
   margin-top: 1rem;
   font-size: 0.9rem;
   color: #a00808;
-}
-
-/* Mobile nav */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 12px;
-    background: #1f1f1f;
-    padding: 12px 16px;
-    width: 100%;
-    margin-top: 10px;
-  }
-  .nav-links.open {
-    display: flex;
-  }
-
-  /* Animate hamburger into an X */
-  .hamburger.open span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-  }
-  .hamburger.open span:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.open span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-  }
 }
 
 .curtain-container {
@@ -405,4 +294,109 @@ a:hover {
 .projects-section {
   position: relative;
   min-height: 100vh;
+}
+
+/* === MOBILE STYLES === */
+@media screen and (max-width: 768px) {
+  /* Layout & spacing */
+  .section {
+    padding: 32px 16px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 32px 16px;
+    text-align: center;
+  }
+
+  /* Navbar */
+  .navbar {
+    flex-wrap: wrap;
+    padding: 12px 16px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  /* Hamburger menu */
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    background: #1f1f1f;
+    padding: 12px 16px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+
+  /* Hamburger animation */
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* Hero image */
+  .hero-image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  /* Hero text */
+  .hero-content h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+  /* Projects */
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .project-card {
+    flex: 1 1 260px;
+    max-width: 320px;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  /* Buttons */
+  .customButton {
+    width: 100%;
+    max-width: 360px;
+    padding: 14px 16px;
+    font-size: 16px;
+  }
 }
